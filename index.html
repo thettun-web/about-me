@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    
+
     <!-- Custom Config -->
     <script>
         tailwind.config = {
@@ -47,21 +48,24 @@
             }
         }
     </script>
-    
+
     <style>
         /* Custom Scrollbar */
         ::-webkit-scrollbar {
             width: 8px;
         }
+
         ::-webkit-scrollbar-track {
-            background: #0f172a; 
+            background: #0f172a;
         }
+
         ::-webkit-scrollbar-thumb {
-            background: #334155; 
+            background: #334155;
             border-radius: 4px;
         }
+
         ::-webkit-scrollbar-thumb:hover {
-            background: #475569; 
+            background: #475569;
         }
 
         /* Glassmorphism Utilities */
@@ -71,7 +75,7 @@
             -webkit-backdrop-filter: blur(12px);
             border: 1px solid rgba(255, 255, 255, 0.05);
         }
-        
+
         .glass-nav {
             background: rgba(15, 23, 42, 0.85);
             backdrop-filter: blur(8px);
@@ -89,7 +93,7 @@
             background: #334155;
             z-index: 0;
         }
-        
+
         @media (min-width: 768px) {
             .timeline-line::before {
                 left: 50%;
@@ -98,330 +102,336 @@
         }
     </style>
 </head>
-<body class="bg-brand-dark text-slate-300 antialiased selection:bg-brand-accent selection:text-brand-dark overflow-x-hidden">
+
+<body
+    class="bg-brand-dark text-slate-300 antialiased selection:bg-brand-accent selection:text-brand-dark overflow-x-hidden">
 
     <!-- Animated Background Blobs -->
     <div class="fixed inset-0 z-0 overflow-hidden pointer-events-none">
-        <div class="absolute top-0 left-1/4 w-96 h-96 bg-brand-secondary rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
-        <div class="absolute top-0 right-1/4 w-96 h-96 bg-brand-accent rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
-        <div class="absolute -bottom-8 left-1/3 w-96 h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div>
+        <div
+            class="absolute top-0 left-1/4 w-96 h-96 bg-brand-secondary rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob">
+        </div>
+        <div
+            class="absolute top-0 right-1/4 w-96 h-96 bg-brand-accent rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000">
+        </div>
+        <div
+            class="absolute -bottom-8 left-1/3 w-96 h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000">
+        </div>
+        </h1>
+        <div class="h-8 mb-8 text-xl md:text-2xl text-slate-400 font-mono">
+            I am a <span id="typewriter" class="text-brand-secondary"></span><span
+                class="animate-typewriter border-r-2 border-brand-accent ml-1">&nbsp;</span>
+        </div>
+
+        <p class="max-w-2xl mx-auto text-lg text-slate-400 leading-relaxed mb-10">
+            Driven technology leader bridging the gap between <strong class="text-white">secure infrastructure</strong>
+            and <strong class="text-white">modern software</strong>. Currently mastering Technology & Management in
+            Berlin. I lead with servant, transformational, and autocratic styles depending on the situation.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="#experience"
+                class="px-8 py-3 rounded-full bg-brand-accent text-brand-dark font-bold hover:bg-white transition-all duration-300 shadow-[0_0_20px_rgba(56,189,248,0.3)] hover:shadow-[0_0_30px_rgba(56,189,248,0.5)]">
+                View Journey
+            </a>
+            <a href="mailto:your.email@example.com"
+                class="px-8 py-3 rounded-full border border-slate-600 hover:border-white hover:text-white transition-all duration-300">
+                Contact Me
+            </a>
+        </div>
+    </div>
+    </section>
+
+    <!-- Tech Stack Scroller -->
+    <div class="w-full bg-brand-light/30 border-y border-white/5 py-8 overflow-hidden mb-24">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-sm text-slate-500 uppercase tracking-widest mb-6">Technologies & Core Competencies</p>
+            <div class="flex flex-wrap justify-center gap-4 md:gap-8 opacity-80">
+                <span
+                    class="px-4 py-2 rounded-lg bg-slate-800 border border-slate-700 hover:border-brand-accent transition-colors cursor-default"><i
+                        class="fab fa-microsoft text-blue-400 mr-2"></i>O365 & Entra ID</span>
+                <span
+                    class="px-4 py-2 rounded-lg bg-slate-800 border border-slate-700 hover:border-brand-accent transition-colors cursor-default"><i
+                        class="fas fa-shield-halved text-green-400 mr-2"></i>NIST & Cybersecurity</span>
+                <span
+                    class="px-4 py-2 rounded-lg bg-slate-800 border border-slate-700 hover:border-brand-accent transition-colors cursor-default"><i
+                        class="fab fa-php text-purple-400 mr-2"></i>PHP Laravel</span>
+                <span
+                    class="px-4 py-2 rounded-lg bg-slate-800 border border-slate-700 hover:border-brand-accent transition-colors cursor-default"><i
+                        class="fab fa-js text-yellow-400 mr-2"></i>JavaScript</span>
+                <span
+                    class="px-4 py-2 rounded-lg bg-slate-800 border border-slate-700 hover:border-brand-accent transition-colors cursor-default"><i
+                        class="fas fa-terminal text-gray-300 mr-2"></i>PowerShell</span>
+                <span
+                    class="px-4 py-2 rounded-lg bg-slate-800 border border-slate-700 hover:border-brand-accent transition-colors cursor-default"><i
+                        class="fas fa-robot text-pink-400 mr-2"></i>Generative AI</span>
+                <span
+                    class="px-4 py-2 rounded-lg bg-slate-800 border border-slate-700 hover:border-brand-accent transition-colors cursor-default"><i
+                        class="fas fa-mobile-screen text-indigo-400 mr-2"></i>Intune MDM</span>
+            </div>
+        </div>
     </div>
 
-    <!-- Navigation -->
-    <nav class="fixed w-full z-50 glass-nav transition-all duration-300">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16">
-                <div class="flex-shrink-0 cursor-pointer group">
-                    <span class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-brand-accent to-brand-secondary group-hover:opacity-80 transition-opacity">
-                        TNT
-                    </span>
-                </div>
-                <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-8">
-                        <a href="#about" class="hover:text-brand-accent transition-colors px-3 py-2 text-sm font-medium">About</a>
-                        <a href="#experience" class="hover:text-brand-accent transition-colors px-3 py-2 text-sm font-medium">Experience</a>
-                        <a href="#skills" class="hover:text-brand-accent transition-colors px-3 py-2 text-sm font-medium">Skills</a>
-                        <a href="#projects" class="hover:text-brand-accent transition-colors px-3 py-2 text-sm font-medium">Projects</a>
+    <!-- Experience Timeline -->
+    <section id="experience" class="max-w-5xl mx-auto px-4 mb-32">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-16 text-center">Professional Journey</h2>
+
+        <div class="relative timeline-line space-y-12">
+
+            <!-- Item 1 (Biomed) -->
+            <div class="relative z-10">
+                <div class="md:flex items-center justify-between">
+                    <div class="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0">
+                        <span class="text-brand-accent font-mono text-sm">Oct 2022 – Feb 2025</span>
+                        <h3 class="text-xl font-bold text-white mt-1">Senior Digital Infrastructure Specialist</h3>
+                        <p class="text-slate-400">Biomed Diagnostics Pte Ltd</p>
+                    </div>
+                    <div
+                        class="absolute left-[24px] md:left-1/2 -ml-[9px] w-[18px] h-[18px] rounded-full bg-brand-accent border-4 border-brand-dark shadow-[0_0_10px_rgba(56,189,248,0.8)]">
+                    </div>
+                    <div class="md:w-1/2 md:pl-12 pl-12">
+                        <div class="glass-panel p-6 rounded-xl hover:bg-slate-800/50 transition-colors">
+                            <ul class="list-disc list-outside ml-4 space-y-2 text-sm text-slate-300">
+                                <li>Oversaw comprehensive incident response & minimized operational impact.</li>
+                                <li>Led administration of M365, Entra ID, and Exchange Online.</li>
+                                <li>Engineered mobile security solutions using Microsoft Intune.</li>
+                                <li>Conducted NIST CSF-based security assessments.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <a href="https://linkedin.com/in/tntun" target="_blank" class="text-gray-400 hover:text-white transition-colors">
-                        <i class="fab fa-linkedin fa-lg"></i>
-                    </a>
-                    <a href="https://github.com/thettun-web" target="_blank" class="ml-4 text-gray-400 hover:text-white transition-colors">
-                        <i class="fab fa-github fa-lg"></i>
-                    </a>
+            </div>
+
+            <!-- Item 2 (Engie) -->
+            <div class="relative z-10">
+                <div class="md:flex items-center justify-between flex-row-reverse">
+                    <div class="md:w-1/2 md:pl-12 mb-4 md:mb-0">
+                        <div class="md:text-left"> <!-- Mobile fix -->
+                            <span class="text-brand-secondary font-mono text-sm">Nov 2014 – Apr 2016</span>
+                            <h3 class="text-xl font-bold text-white mt-1">Senior IT Executive</h3>
+                            <p class="text-slate-400">Engie Services Singapore</p>
+                        </div>
+                    </div>
+                    <div
+                        class="absolute left-[24px] md:left-1/2 -ml-[9px] w-[18px] h-[18px] rounded-full bg-slate-600 border-4 border-brand-dark">
+                    </div>
+                    <div class="md:w-1/2 md:pr-12 pl-12 md:pl-0"> <!-- Content on Left for Desktop -->
+                        <div class="glass-panel p-6 rounded-xl hover:bg-slate-800/50 transition-colors">
+                            <ul class="list-disc list-outside ml-4 space-y-2 text-sm text-slate-300">
+                                <li>Led IT support teams & set up IT systems for new corporate sites.</li>
+                                <li>Provided expert L2/L3 infrastructure support (Network, Servers, Firewalls).</li>
+                                <li>Authored IT documentation, SOPs, and ITIL frameworks.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 3 (Keppel) -->
+            <div class="relative z-10">
+                <div class="md:flex items-center justify-between">
+                    <div class="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0">
+                        <span class="text-brand-secondary font-mono text-sm">Feb 2008 – Nov 2016</span>
+                        <h3 class="text-xl font-bold text-white mt-1">IT Development Officer</h3>
+                        <p class="text-slate-400">Keppel FMO Pte Ltd</p>
+                    </div>
+                    <div
+                        class="absolute left-[24px] md:left-1/2 -ml-[9px] w-[18px] h-[18px] rounded-full bg-slate-600 border-4 border-brand-dark">
+                    </div>
+                    <div class="md:w-1/2 md:pl-12 pl-12">
+                        <div class="glass-panel p-6 rounded-xl hover:bg-slate-800/50 transition-colors">
+                            <ul class="list-disc list-outside ml-4 space-y-2 text-sm text-slate-300">
+                                <li>Spearheaded end-to-end setup of IT systems for new sites.</li>
+                                <li>Ensured optimal performance of all IT infrastructure.</li>
+                                <li>Conducted rigorous IT audits for policy compliance.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Projects & Education Grid -->
+    <section id="projects" class="max-w-6xl mx-auto px-4 mb-32">
+        <div class="grid md:grid-cols-2 gap-12">
+
+            <!-- Projects -->
+            <div>
+                <h2 class="text-2xl font-bold text-white mb-8 flex items-center">
+                    <i class="fas fa-code-branch text-brand-accent mr-3"></i> Featured Projects
+                </h2>
+                <div class="space-y-6">
+                    <!-- Project 1 -->
+                    <div
+                        class="glass-panel p-6 rounded-xl group hover:border-brand-accent/50 transition-all duration-300">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-lg font-bold text-white group-hover:text-brand-accent transition-colors">
+                                Automated Research Engine</h3>
+                            <span class="text-xs font-mono py-1 px-2 rounded bg-brand-accent/10 text-brand-accent">In
+                                Progress</span>
+                        </div>
+                        <p class="text-slate-400 text-sm mb-4">
+                            Developing an automated engine applying software development and management principles to
+                            streamline data synthesis.
+                        </p>
+                        <div class="flex gap-2 text-xs">
+                            <span class="bg-slate-800 px-2 py-1 rounded">AI</span>
+                            <span class="bg-slate-800 px-2 py-1 rounded">Automation</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div
+                        class="glass-panel p-6 rounded-xl group hover:border-brand-accent/50 transition-all duration-300">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-lg font-bold text-white group-hover:text-brand-accent transition-colors">
+                                News Website</h3>
+                            <a href="https://github.com/thettun-web/tntberlin_2025" target="_blank"
+                                class="text-slate-400 hover:text-white"><i class="fab fa-github"></i></a>
+                        </div>
+                        <p class="text-slate-400 text-sm mb-4">
+                            A dynamic news platform built with PHP Laravel, featuring a responsive frontend and robust
+                            backend management.
+                        </p>
+                        <div class="flex gap-2 text-xs">
+                            <span class="bg-slate-800 px-2 py-1 rounded">Laravel</span>
+                            <span class="bg-slate-800 px-2 py-1 rounded">PHP</span>
+                            <span class="bg-slate-800 px-2 py-1 rounded">Tailwind</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Time Tools -->
+                    <div
+                        class="glass-panel p-6 rounded-xl group hover:border-brand-accent/50 transition-all duration-300">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-lg font-bold text-white group-hover:text-brand-accent transition-colors">
+                                Time Tools</h3>
+                        </div>
+                        <p class="text-slate-400 text-sm mb-4">
+                            A collection of utility tools designed for efficient time management and timezone
+                            conversion.
+                        </p>
+                        <div class="flex gap-2 text-xs">
+                            <span class="bg-slate-800 px-2 py-1 rounded">JavaScript</span>
+                            <span class="bg-slate-800 px-2 py-1 rounded">Utility</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Fireworks -->
+                    <div
+                        class="glass-panel p-6 rounded-xl group hover:border-brand-accent/50 transition-all duration-300">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-lg font-bold text-white group-hover:text-brand-accent transition-colors">
+                                Fireworks HTML Page</h3>
+                        </div>
+                        <p class="text-slate-400 text-sm mb-4">
+                            An interactive visual animation creating fireworks effects rendered with HTML5 Canvas.
+                        </p>
+                        <div class="flex gap-2 text-xs">
+                            <span class="bg-slate-800 px-2 py-1 rounded">HTML5 Canvas</span>
+                            <span class="bg-slate-800 px-2 py-1 rounded">Animation</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: Cool Note Taker -->
+                    <div
+                        class="glass-panel p-6 rounded-xl group hover:border-brand-accent/50 transition-all duration-300">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-lg font-bold text-white group-hover:text-brand-accent transition-colors">
+                                Cool Note Taker</h3>
+                        </div>
+                        <p class="text-slate-400 text-sm mb-4">
+                            A simple and efficient application for organizing thoughts and persisting notes.
+                        </p>
+                        <div class="flex gap-2 text-xs">
+                            <span class="bg-slate-800 px-2 py-1 rounded">JavaScript</span>
+                            <span class="bg-slate-800 px-2 py-1 rounded">CRUD</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div>
+                <h2 class="text-2xl font-bold text-white mb-8 flex items-center">
+                    <i class="fas fa-graduation-cap text-brand-secondary mr-3"></i> Academics
+                </h2>
+                <div class="space-y-6">
+                    <div class="glass-panel p-6 rounded-xl border-l-4 border-brand-accent">
+                        <span class="text-xs text-brand-accent font-mono block mb-1">Aug 2025 – Present</span>
+                        <h3 class="text-lg font-bold text-white">Master in Technology & Management</h3>
+                        <p class="text-slate-400 text-sm">CODE University of Applied Sciences, Berlin</p>
+                        <p class="text-slate-500 text-xs mt-2">Focus: Leadership, AI, Strategy</p>
+                    </div>
+
+                    <div class="glass-panel p-6 rounded-xl border-l-4 border-slate-600">
+                        <span class="text-xs text-slate-400 font-mono block mb-1">Apr 2025 – Jul 2025</span>
+                        <h3 class="text-lg font-bold text-white">Master in Cybersecurity (Studies)</h3>
+                        <p class="text-slate-400 text-sm">IU International University, Berlin</p>
+                    </div>
+
+                    <div class="glass-panel p-6 rounded-xl border-l-4 border-slate-600">
+                        <span class="text-xs text-slate-400 font-mono block mb-1">Sep 2001 – Aug 2005</span>
+                        <h3 class="text-lg font-bold text-white">Bachelor of Computer Technology</h3>
+                        <p class="text-slate-400 text-sm">University of Computer Studies, Yangon</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Certifications Bar -->
+    <section id="skills" class="border-t border-white/5 bg-slate-900/50 py-16">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold text-white mb-10">Certifications & Languages</h2>
+
+            <!-- Certifications -->
+            <div class="flex flex-wrap justify-center gap-6 mb-8">
+                <div
+                    class="flex items-center gap-3 bg-slate-800 px-5 py-3 rounded-full border border-slate-700 hover:border-brand-accent transition-colors">
+                    <i class="fab fa-google text-white"></i>
+                    <span class="font-semibold text-sm">Google Cybersecurity</span>
+                </div>
+                <div
+                    class="flex items-center gap-3 bg-slate-800 px-5 py-3 rounded-full border border-slate-700 hover:border-brand-accent transition-colors">
+                    <i class="fas fa-check-circle text-green-500"></i>
+                    <span class="font-semibold text-sm">Qualys Vulnerability Mgmt</span>
+                </div>
+                <div
+                    class="flex items-center gap-3 bg-slate-800 px-5 py-3 rounded-full border border-slate-700 hover:border-brand-accent transition-colors">
+                    <i class="fas fa-shield-alt text-blue-500"></i>
+                    <span class="font-semibold text-sm">CompTIA CySA+ Prep</span>
+                </div>
+            </div>
+
+            <!-- Languages -->
+            <div class="flex flex-wrap justify-center gap-6">
+                <div
+                    class="flex items-center gap-3 bg-slate-800 px-5 py-3 rounded-full border border-slate-700 hover:border-brand-secondary transition-colors">
+                    <i class="fas fa-globe text-brand-accent"></i>
+                    <span class="font-semibold text-sm">English (PTE: 74)</span>
+                </div>
+                <div
+                    class="flex items-center gap-3 bg-slate-800 px-5 py-3 rounded-full border border-slate-700 hover:border-brand-secondary transition-colors">
+                    <i class="fas fa-book-open text-yellow-500"></i>
+                    <span class="font-semibold text-sm">German (Learning)</span>
+                </div>
+                <div
+                    class="flex items-center gap-3 bg-slate-800 px-5 py-3 rounded-full border border-slate-700 hover:border-brand-secondary transition-colors">
+                    <i class="fas fa-comment text-brand-secondary"></i>
+                    <span class="font-semibold text-sm">Burmese (Native)</span>
                 </div>
             </div>
         </div>
-    </nav>
+    </section>
 
-    <!-- Main Content -->
-    <main class="relative z-10 pt-20">
-
-        <!-- Hero Section -->
-        <section id="about" class="min-h-[90vh] flex items-center justify-center px-4">
-            <div class="max-w-4xl mx-auto text-center">
-                <div class="inline-block p-1 rounded-full bg-gradient-to-r from-brand-accent to-brand-secondary mb-6">
-                    <div class="bg-brand-dark rounded-full p-1">
-                        <!-- Placeholder Avatar if needed, or simple Initials -->
-                        <div class="h-24 w-24 rounded-full bg-slate-800 flex items-center justify-center text-2xl font-bold text-white">
-                            TNT
-                        </div>
-                    </div>
-                </div>
-                <h2 class="text-brand-accent font-semibold tracking-wider uppercase mb-2">Hello, I'm</h2>
-                <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">
-                    Thet Naing Tun
-                </h1>
-                <div class="h-8 mb-8 text-xl md:text-2xl text-slate-400 font-mono">
-                    I am a <span id="typewriter" class="text-brand-secondary"></span><span class="animate-typewriter border-r-2 border-brand-accent ml-1">&nbsp;</span>
-                </div>
-                
-                <p class="max-w-2xl mx-auto text-lg text-slate-400 leading-relaxed mb-10">
-                    Driven technology leader bridging the gap between <strong class="text-white">secure infrastructure</strong> and <strong class="text-white">modern software</strong>. Currently mastering Technology & Management in Berlin. I lead with servant, transformational, and autocratic styles depending on the situation.
-                </p>
-
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="#experience" class="px-8 py-3 rounded-full bg-brand-accent text-brand-dark font-bold hover:bg-white transition-all duration-300 shadow-[0_0_20px_rgba(56,189,248,0.3)] hover:shadow-[0_0_30px_rgba(56,189,248,0.5)]">
-                        View Journey
-                    </a>
-                    <a href="mailto:your.email@example.com" class="px-8 py-3 rounded-full border border-slate-600 hover:border-white hover:text-white transition-all duration-300">
-                        Contact Me
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Tech Stack Scroller -->
-        <div class="w-full bg-brand-light/30 border-y border-white/5 py-8 overflow-hidden mb-24">
-            <div class="max-w-7xl mx-auto px-4 text-center">
-                <p class="text-sm text-slate-500 uppercase tracking-widest mb-6">Technologies & Core Competencies</p>
-                <div class="flex flex-wrap justify-center gap-4 md:gap-8 opacity-80">
-                    <span class="px-4 py-2 rounded-lg bg-slate-800 border border-slate-700 hover:border-brand-accent transition-colors cursor-default"><i class="fab fa-microsoft text-blue-400 mr-2"></i>O365 & Entra ID</span>
-                    <span class="px-4 py-2 rounded-lg bg-slate-800 border border-slate-700 hover:border-brand-accent transition-colors cursor-default"><i class="fas fa-shield-halved text-green-400 mr-2"></i>NIST & Cybersecurity</span>
-                    <span class="px-4 py-2 rounded-lg bg-slate-800 border border-slate-700 hover:border-brand-accent transition-colors cursor-default"><i class="fab fa-php text-purple-400 mr-2"></i>PHP Laravel</span>
-                    <span class="px-4 py-2 rounded-lg bg-slate-800 border border-slate-700 hover:border-brand-accent transition-colors cursor-default"><i class="fab fa-js text-yellow-400 mr-2"></i>JavaScript</span>
-                    <span class="px-4 py-2 rounded-lg bg-slate-800 border border-slate-700 hover:border-brand-accent transition-colors cursor-default"><i class="fas fa-terminal text-gray-300 mr-2"></i>PowerShell</span>
-                    <span class="px-4 py-2 rounded-lg bg-slate-800 border border-slate-700 hover:border-brand-accent transition-colors cursor-default"><i class="fas fa-robot text-pink-400 mr-2"></i>Generative AI</span>
-                    <span class="px-4 py-2 rounded-lg bg-slate-800 border border-slate-700 hover:border-brand-accent transition-colors cursor-default"><i class="fas fa-mobile-screen text-indigo-400 mr-2"></i>Intune MDM</span>
-                </div>
-            </div>
-        </div>
-
-        <!-- Experience Timeline -->
-        <section id="experience" class="max-w-5xl mx-auto px-4 mb-32">
-            <h2 class="text-3xl md:text-4xl font-bold text-white mb-16 text-center">Professional Journey</h2>
-            
-            <div class="relative timeline-line space-y-12">
-                
-                <!-- Item 1 (Biomed) -->
-                <div class="relative z-10">
-                    <div class="md:flex items-center justify-between">
-                        <div class="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0">
-                            <span class="text-brand-accent font-mono text-sm">Oct 2022 – Feb 2025</span>
-                            <h3 class="text-xl font-bold text-white mt-1">Senior Digital Infrastructure Specialist</h3>
-                            <p class="text-slate-400">Biomed Diagnostics Pte Ltd</p>
-                        </div>
-                        <div class="absolute left-[24px] md:left-1/2 -ml-[9px] w-[18px] h-[18px] rounded-full bg-brand-accent border-4 border-brand-dark shadow-[0_0_10px_rgba(56,189,248,0.8)]"></div>
-                        <div class="md:w-1/2 md:pl-12 pl-12">
-                            <div class="glass-panel p-6 rounded-xl hover:bg-slate-800/50 transition-colors">
-                                <ul class="list-disc list-outside ml-4 space-y-2 text-sm text-slate-300">
-                                    <li>Oversaw comprehensive incident response & minimized operational impact.</li>
-                                    <li>Led administration of M365, Entra ID, and Exchange Online.</li>
-                                    <li>Engineered mobile security solutions using Microsoft Intune.</li>
-                                    <li>Conducted NIST CSF-based security assessments.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Item 2 (Engie) -->
-                <div class="relative z-10">
-                    <div class="md:flex items-center justify-between flex-row-reverse">
-                        <div class="md:w-1/2 md:pl-12 mb-4 md:mb-0">
-                             <div class="md:text-left"> <!-- Mobile fix -->
-                                <span class="text-brand-secondary font-mono text-sm">Nov 2014 – Apr 2016</span>
-                                <h3 class="text-xl font-bold text-white mt-1">Senior IT Executive</h3>
-                                <p class="text-slate-400">Engie Services Singapore</p>
-                             </div>
-                        </div>
-                        <div class="absolute left-[24px] md:left-1/2 -ml-[9px] w-[18px] h-[18px] rounded-full bg-slate-600 border-4 border-brand-dark"></div>
-                        <div class="md:w-1/2 md:pr-12 pl-12 md:pl-0"> <!-- Content on Left for Desktop -->
-                            <div class="glass-panel p-6 rounded-xl hover:bg-slate-800/50 transition-colors">
-                                <ul class="list-disc list-outside ml-4 space-y-2 text-sm text-slate-300">
-                                    <li>Led IT support teams & set up IT systems for new corporate sites.</li>
-                                    <li>Provided expert L2/L3 infrastructure support (Network, Servers, Firewalls).</li>
-                                    <li>Authored IT documentation, SOPs, and ITIL frameworks.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Item 3 (Keppel) -->
-                <div class="relative z-10">
-                    <div class="md:flex items-center justify-between">
-                        <div class="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0">
-                            <span class="text-brand-secondary font-mono text-sm">Feb 2008 – Nov 2016</span>
-                            <h3 class="text-xl font-bold text-white mt-1">IT Development Officer</h3>
-                            <p class="text-slate-400">Keppel FMO Pte Ltd</p>
-                        </div>
-                        <div class="absolute left-[24px] md:left-1/2 -ml-[9px] w-[18px] h-[18px] rounded-full bg-slate-600 border-4 border-brand-dark"></div>
-                        <div class="md:w-1/2 md:pl-12 pl-12">
-                            <div class="glass-panel p-6 rounded-xl hover:bg-slate-800/50 transition-colors">
-                                <ul class="list-disc list-outside ml-4 space-y-2 text-sm text-slate-300">
-                                    <li>Spearheaded end-to-end setup of IT systems for new sites.</li>
-                                    <li>Ensured optimal performance of all IT infrastructure.</li>
-                                    <li>Conducted rigorous IT audits for policy compliance.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Projects & Education Grid -->
-        <section id="projects" class="max-w-6xl mx-auto px-4 mb-32">
-            <div class="grid md:grid-cols-2 gap-12">
-                
-                <!-- Projects -->
-                <div>
-                    <h2 class="text-2xl font-bold text-white mb-8 flex items-center">
-                        <i class="fas fa-code-branch text-brand-accent mr-3"></i> Featured Projects
-                    </h2>
-                    <div class="space-y-6">
-                        <!-- Project 1 -->
-                        <div class="glass-panel p-6 rounded-xl group hover:border-brand-accent/50 transition-all duration-300">
-                            <div class="flex justify-between items-start mb-4">
-                                <h3 class="text-lg font-bold text-white group-hover:text-brand-accent transition-colors">Automated Research Engine</h3>
-                                <span class="text-xs font-mono py-1 px-2 rounded bg-brand-accent/10 text-brand-accent">In Progress</span>
-                            </div>
-                            <p class="text-slate-400 text-sm mb-4">
-                                Developing an automated engine applying software development and management principles to streamline data synthesis.
-                            </p>
-                            <div class="flex gap-2 text-xs">
-                                <span class="bg-slate-800 px-2 py-1 rounded">AI</span>
-                                <span class="bg-slate-800 px-2 py-1 rounded">Automation</span>
-                            </div>
-                        </div>
-
-                        <!-- Project 2 -->
-                        <div class="glass-panel p-6 rounded-xl group hover:border-brand-accent/50 transition-all duration-300">
-                            <div class="flex justify-between items-start mb-4">
-                                <h3 class="text-lg font-bold text-white group-hover:text-brand-accent transition-colors">News Website</h3>
-                                <a href="https://github.com/thettun-web/tntberlin_2025" target="_blank" class="text-slate-400 hover:text-white"><i class="fab fa-github"></i></a>
-                            </div>
-                            <p class="text-slate-400 text-sm mb-4">
-                                A dynamic news platform built with PHP Laravel, featuring a responsive frontend and robust backend management.
-                            </p>
-                            <div class="flex gap-2 text-xs">
-                                <span class="bg-slate-800 px-2 py-1 rounded">Laravel</span>
-                                <span class="bg-slate-800 px-2 py-1 rounded">PHP</span>
-                                <span class="bg-slate-800 px-2 py-1 rounded">Tailwind</span>
-                            </div>
-                        </div>
-
-                        <!-- Project 3: Time Tools -->
-                        <div class="glass-panel p-6 rounded-xl group hover:border-brand-accent/50 transition-all duration-300">
-                            <div class="flex justify-between items-start mb-4">
-                                <h3 class="text-lg font-bold text-white group-hover:text-brand-accent transition-colors">Time Tools</h3>
-                            </div>
-                            <p class="text-slate-400 text-sm mb-4">
-                                A collection of utility tools designed for efficient time management and timezone conversion.
-                            </p>
-                            <div class="flex gap-2 text-xs">
-                                <span class="bg-slate-800 px-2 py-1 rounded">JavaScript</span>
-                                <span class="bg-slate-800 px-2 py-1 rounded">Utility</span>
-                            </div>
-                        </div>
-
-                        <!-- Project 4: Fireworks -->
-                        <div class="glass-panel p-6 rounded-xl group hover:border-brand-accent/50 transition-all duration-300">
-                            <div class="flex justify-between items-start mb-4">
-                                <h3 class="text-lg font-bold text-white group-hover:text-brand-accent transition-colors">Fireworks HTML Page</h3>
-                            </div>
-                            <p class="text-slate-400 text-sm mb-4">
-                                An interactive visual animation creating fireworks effects rendered with HTML5 Canvas.
-                            </p>
-                            <div class="flex gap-2 text-xs">
-                                <span class="bg-slate-800 px-2 py-1 rounded">HTML5 Canvas</span>
-                                <span class="bg-slate-800 px-2 py-1 rounded">Animation</span>
-                            </div>
-                        </div>
-
-                        <!-- Project 5: Cool Note Taker -->
-                        <div class="glass-panel p-6 rounded-xl group hover:border-brand-accent/50 transition-all duration-300">
-                            <div class="flex justify-between items-start mb-4">
-                                <h3 class="text-lg font-bold text-white group-hover:text-brand-accent transition-colors">Cool Note Taker</h3>
-                            </div>
-                            <p class="text-slate-400 text-sm mb-4">
-                                A simple and efficient application for organizing thoughts and persisting notes.
-                            </p>
-                            <div class="flex gap-2 text-xs">
-                                <span class="bg-slate-800 px-2 py-1 rounded">JavaScript</span>
-                                <span class="bg-slate-800 px-2 py-1 rounded">CRUD</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Education -->
-                <div>
-                    <h2 class="text-2xl font-bold text-white mb-8 flex items-center">
-                        <i class="fas fa-graduation-cap text-brand-secondary mr-3"></i> Academics
-                    </h2>
-                    <div class="space-y-6">
-                        <div class="glass-panel p-6 rounded-xl border-l-4 border-brand-accent">
-                            <span class="text-xs text-brand-accent font-mono block mb-1">Aug 2025 – Present</span>
-                            <h3 class="text-lg font-bold text-white">Master in Technology & Management</h3>
-                            <p class="text-slate-400 text-sm">CODE University of Applied Sciences, Berlin</p>
-                            <p class="text-slate-500 text-xs mt-2">Focus: Leadership, AI, Strategy</p>
-                        </div>
-                        
-                        <div class="glass-panel p-6 rounded-xl border-l-4 border-slate-600">
-                            <span class="text-xs text-slate-400 font-mono block mb-1">Apr 2025 – Jul 2025</span>
-                            <h3 class="text-lg font-bold text-white">Master in Cybersecurity (Studies)</h3>
-                            <p class="text-slate-400 text-sm">IU International University, Berlin</p>
-                        </div>
-
-                        <div class="glass-panel p-6 rounded-xl border-l-4 border-slate-600">
-                            <span class="text-xs text-slate-400 font-mono block mb-1">Sep 2001 – Aug 2005</span>
-                            <h3 class="text-lg font-bold text-white">Bachelor of Computer Technology</h3>
-                            <p class="text-slate-400 text-sm">University of Computer Studies, Yangon</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Certifications Bar -->
-        <section id="skills" class="border-t border-white/5 bg-slate-900/50 py-16">
-            <div class="max-w-6xl mx-auto px-4 text-center">
-                <h2 class="text-2xl font-bold text-white mb-10">Certifications & Languages</h2>
-                
-                <!-- Certifications -->
-                <div class="flex flex-wrap justify-center gap-6 mb-8">
-                    <div class="flex items-center gap-3 bg-slate-800 px-5 py-3 rounded-full border border-slate-700 hover:border-brand-accent transition-colors">
-                        <i class="fab fa-google text-white"></i>
-                        <span class="font-semibold text-sm">Google Cybersecurity</span>
-                    </div>
-                    <div class="flex items-center gap-3 bg-slate-800 px-5 py-3 rounded-full border border-slate-700 hover:border-brand-accent transition-colors">
-                        <i class="fas fa-check-circle text-green-500"></i>
-                        <span class="font-semibold text-sm">Qualys Vulnerability Mgmt</span>
-                    </div>
-                    <div class="flex items-center gap-3 bg-slate-800 px-5 py-3 rounded-full border border-slate-700 hover:border-brand-accent transition-colors">
-                        <i class="fas fa-shield-alt text-blue-500"></i>
-                        <span class="font-semibold text-sm">CompTIA CySA+ Prep</span>
-                    </div>
-                </div>
-
-                <!-- Languages -->
-                <div class="flex flex-wrap justify-center gap-6">
-                    <div class="flex items-center gap-3 bg-slate-800 px-5 py-3 rounded-full border border-slate-700 hover:border-brand-secondary transition-colors">
-                        <i class="fas fa-globe text-brand-accent"></i>
-                        <span class="font-semibold text-sm">English (PTE: 74)</span>
-                    </div>
-                    <div class="flex items-center gap-3 bg-slate-800 px-5 py-3 rounded-full border border-slate-700 hover:border-brand-secondary transition-colors">
-                        <i class="fas fa-book-open text-yellow-500"></i>
-                        <span class="font-semibold text-sm">German (Learning)</span>
-                    </div>
-                    <div class="flex items-center gap-3 bg-slate-800 px-5 py-3 rounded-full border border-slate-700 hover:border-brand-secondary transition-colors">
-                        <i class="fas fa-comment text-brand-secondary"></i>
-                        <span class="font-semibold text-sm">Burmese (Native)</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer class="py-8 text-center text-slate-600 text-sm">
-            <p>&copy; 2025 Thet Naing Tun. Built with Tailwind CSS.</p>
-        </footer>
+    <!-- Footer -->
+    <footer class="py-8 text-center text-slate-600 text-sm">
+        <p>&copy; 2025 Thet Naing Tun. Built with Tailwind CSS.</p>
+    </footer>
 
     </main>
 
@@ -436,11 +446,11 @@
 
         function type() {
             const currentPhrase = phrases[phraseIndex];
-            
+
             if (isDeleting) {
                 textElement.textContent = currentPhrase.substring(0, charIndex - 1);
                 charIndex--;
-                typeSpeed = 50; 
+                typeSpeed = 50;
             } else {
                 textElement.textContent = currentPhrase.substring(0, charIndex + 1);
                 charIndex++;
@@ -462,4 +472,5 @@
         document.addEventListener('DOMContentLoaded', type);
     </script>
 </body>
+
 </html>
