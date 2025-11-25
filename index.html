@@ -427,6 +427,11 @@
 
     </main>
 
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-8 right-8 z-50 p-4 rounded-full bg-brand-accent text-brand-dark shadow-lg hover:bg-white transition-all duration-300 opacity-0 invisible translate-y-4 group" aria-label="Back to Top">
+        <i class="fas fa-arrow-up group-hover:-translate-y-1 transition-transform duration-300"></i>
+    </button>
+
     <!-- Typewriter Script -->
     <script>
         const textElement = document.getElementById('typewriter');
@@ -462,6 +467,26 @@
         }
 
         document.addEventListener('DOMContentLoaded', type);
+
+        // Back to Top Script
+        const backToTopBtn = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.remove('opacity-0', 'invisible', 'translate-y-4');
+                backToTopBtn.classList.add('opacity-100', 'visible', 'translate-y-0');
+            } else {
+                backToTopBtn.classList.add('opacity-0', 'invisible', 'translate-y-4');
+                backToTopBtn.classList.remove('opacity-100', 'visible', 'translate-y-0');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
     </script>
 </body>
 </html>
